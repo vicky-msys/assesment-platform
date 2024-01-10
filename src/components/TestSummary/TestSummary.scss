@@ -1,0 +1,81 @@
+@import "@app/assets/styles/gColors.scss";
+
+.test-summary-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  // width: 100%;
+  // max-width: 250px;
+  .number-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    overflow: auto;
+    max-height: 400px;
+  }
+  .number-label {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    min-width: 30px;
+    text-align: center;
+  }
+  .summary-title {
+    font-weight: bold;
+    color: $color1;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 18px;
+  }
+
+  .skipped {
+    border: solid 1px $color13;
+    color: $color2;
+    background-color: $bg-color-1;
+  }
+  .normal {
+    border: solid 1px $color13;
+    color: $color4;
+    background-color: $bg-color-3;
+  }
+
+  .attempted {
+    border: solid 1px $color1;
+    color: $color8;
+    background-color: $bg-color-19;
+  }
+  .status-label {
+    justify-content: space-between;
+  }
+  .status-label-container {
+    width: 100%;
+    display: table;
+    .status-label {
+      span {
+        text-transform: capitalize;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: $color2;
+      }
+      .status-round {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        margin: 2px 5px 0 5px;
+      }
+      .attempted {
+        background-color: $bg-color-2;
+      }
+      .skipped {
+        background-color: $bg-color-1;
+      }
+      .normal{
+        background-color: $bg-color-3;
+      }
+    }
+  }
+}

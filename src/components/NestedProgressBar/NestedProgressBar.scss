@@ -1,0 +1,96 @@
+@import "@app/assets/styles/gColors.scss";
+@import "@app/assets/styles/gMixin.scss";
+
+.ProgressCon {
+  @include flexCentered;
+  height: 100%;
+  min-width: 350px;
+  .miniProgressCon {
+    position: relative;
+    top: 6%;
+    left: 27%;
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+  }
+
+  .miniProgressCon .ant-progress-circle:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    .ant-progress-inner {
+      height: 160px !important;
+      width: 160px !important;
+    }
+    .ant-progress-text {
+      display: none;
+    }
+  }
+  .miniProgressCon .ant-progress-circle:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .ant-progress-inner {
+      height: 130px !important;
+      width: 130px !important;
+    }
+    .ant-progress-text {
+      display: none;
+    }
+  }
+  .miniProgressCon .ant-progress-circle:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .ant-progress-inner {
+      height: 100px !important;
+      width: 100px !important;
+    }
+    .ant-progress-text {
+      display: none;
+    }
+  }
+
+  /// container
+  .container {
+    height: auto;
+    width: 90%;
+    background-color: $bg-color-1;
+  }
+  .title {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: $color10;
+    position: relative;
+    top: 3vh;
+    left: 5%;
+  }
+
+  .legends {
+    list-style: none;
+    width: 80%;
+    margin: 4% 10% 4% 10%;
+  }
+
+  .legends > li {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: $color2;
+    margin: 2% 0 2% 0;
+    display: flex;
+    align-items: center;
+  }
+  .LegenColor {
+    height: 20px;
+    display: inline-block;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0 3% 0 3%;
+  }
+}

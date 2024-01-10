@@ -1,0 +1,45 @@
+@import "@app/assets/styles/gColors.scss";
+.instruction-parent {
+    .line {
+      background-color: $color14;
+      width: 12px;
+      margin: 0px 0px 8px 0px;
+      border-radius: 16px;
+      position: relative;
+    }
+    ol {
+      list-style: none;
+      counter-reset: item;
+      color: $color1;
+      padding: 8px 0px 0px 30px;
+      margin-left: -13px;
+      overflow: auto;
+      z-index: 0;
+    }
+    li {
+      counter-increment: item;
+      margin-bottom: 5px;
+      min-height: 50px;
+    }
+    li:before {
+      margin-right: 8px;
+      margin-bottom: 0px;
+      margin-left: -2em;
+      content: counter(item);
+      background: $color1;
+      border-radius: 100%;
+      color: $color14;
+      width: 1.2em;
+      font-weight: bold;
+      text-align: center;
+      display: inline-block;
+    }
+    li:after {
+      padding-left: 5px;
+    }
+    .text-container {
+        display: inline-flex;
+        padding: 10px 0px 0px 15px;
+      }
+  }
+  

@@ -1,0 +1,302 @@
+@import "@app/assets/styles/gColors.scss";
+@import "@app/assets/styles/gMixin.scss";
+
+.inputs {
+  background-color: $bg-color-1;
+  z-index: 6;
+  width: 50%;
+  max-width: 50%;
+  height: 80vh;
+  @include flexCentered;
+  .LoginInputContainer {
+    position: relative;
+    display: grid;
+    align-items: center;
+    max-width: 60%;
+    min-height: 30%;
+    width: 100%;
+  }
+  .input {
+    display: grid;
+    .ant-row {
+      display: block;
+    }
+    .ant-input-prefix {
+      background-color: $bg-color-5;
+      margin-right: 0%;
+    }
+    .ant-input-affix-wrapper {
+      // border: none;
+      padding: 0%;
+      input {
+        padding-left: 15px;
+      }
+    }
+    .ant-input-suffix {
+      padding-right: 4px;
+      background: $bg-color-5;
+      margin: 0;
+    }
+    input {
+      max-width: 520px;
+      width: 100%;
+      min-width: 90%;
+      height: 40px;
+      background: $bg-color-5 !important;
+      font-size: 20px;
+      padding-left: 15px;
+    }
+    label {
+      color: $color5;
+      font-size: 20px;
+    }
+  }
+}
+
+.login-Form-container {
+  width: 35%;
+  height: 100%;
+  .ant-input-affix-wrapper:focus,
+  .ant-input-affix-wrapper-focused {
+    border-color: none;
+    // box-shadow: 0 0 0 2px rgb(24 144 255 / 20%);
+    box-shadow: none;
+    border-right-width: 1px;
+    outline: 0;
+  }
+  .Sign-In {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    position: relative;
+    top: 38%;
+    left: 20%;
+  }
+  .Forget-Password {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 68%;
+    color: $color1;
+    cursor: pointer;
+  }
+  .Login-Form {
+    height: 30%;
+    width: 70%;
+    display: inline-block;
+    transform: translate(27%, 140%);
+  }
+  .ant-input {
+    border: none;
+    border-bottom: 1px solid $border-color2;
+  }
+  .ant-input-affix-wrapper-lg {
+    border: none;
+    border-bottom: 1px solid $border-color2;
+  }
+  .btn-container .blueBgBtn {
+    height: 5vh;
+    border-radius: 4px;
+  }
+  .ant-input:focus,
+  .ant-input-focused {
+    box-shadow: none;
+  }
+  .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:focus,
+  .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input-focused {
+    box-shadow: none;
+  }
+  .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper:focus,
+  .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper-focused {
+    box-shadow: none;
+  }
+
+  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    border-color: $border-color2;
+    border-right-width: 1px;
+    z-index: 1;
+  }
+}
+
+.btn-centered-modal {
+  .ant-modal-body {
+    transform: translateY(8%);
+  }
+  .ant-form-item {
+    margin: 0;
+  }
+
+  .ModalInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30vh;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color2;
+  }
+  .ant-input-password :hover,
+  .ant-modal-content {
+    box-shadow: $color3;
+  }
+  //
+  .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper,
+  .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper:hover {
+    box-shadow: none;
+  }
+  .NumberInputError {
+    float: left;
+    color: $color11;
+    position: absolute;
+    top: 70%;
+    left: 11%;
+  }
+  .ant-form-item-explain-error {
+    color: $color11;
+    float: left;
+  }
+  .ant-form {
+    width: 100%;
+  }
+  .ModalButton {
+    float: center;
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    border: none;
+    background-color: $color1;
+    color: $color6;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    position: absolute;
+    top: 90%;
+    left: 37%;
+  }
+  .ModalTitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    color: $color12;
+  }
+
+  .SucessModal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .SucessImg {
+      height: 90px;
+      width: 90px;
+      margin-bottom: 20px;
+    }
+    .ModalInputs {
+      height: 15vh;
+    }
+  }
+  .ant-input:placeholder-shown {
+    border: none;
+    border-bottom: 1px solid $border-color2;
+  }
+  .ant-input:focus,
+  .ant-input-focused {
+    box-shadow: none;
+    border-color: transparent;
+    border-bottom: 1px solid $border-color2;
+  }
+  .ant-input-affix-wrapper {
+    border: none;
+    border-bottom: 1px solid $border-color2;
+    border-color: $border-color2;
+
+    .ant-input {
+      border: none;
+    }
+  }
+  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    border-color: none;
+    border-right-width: 1px;
+    z-index: 1;
+  }
+  .ant-input-affix-wrapper:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+  .ant-modal-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    color: $color12;
+  }
+  .ant-modal-header,
+  .ant-modal-footer {
+    border-bottom: none;
+    border-top: none;
+  }
+  .ant-modal-body {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $color2;
+    width: 80%;
+  }
+  .ant-modal-content {
+    @include flexCentered;
+    flex-direction: column;
+
+  }
+
+  .btn-container .blueBgBtn {
+    width: 94px;
+    height: 42px;
+    border-radius: 5px;
+  }
+
+  .OtpNumber {
+    display: flex;
+    justify-content: space-around;
+    .ant-input-number {
+      width: 8vh;
+      height: 7vh;
+      border-radius: 8px;
+    }
+    .ant-input-number-focused,
+    .ant-input-number:focus {
+      box-shadow: none;
+      border-color: $border-color2;
+    }
+    .ant-input-number:hover {
+      border-color: $border-color2;
+    }
+    .ant-input-number-input-wrap input {
+      padding: 42% 40%;
+      color: $color12;
+    }
+  }
+  .OtpText {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    line-height: 20px;
+    color: $color13;
+    margin: 0 0 15px;
+    transform: translateY(-10px);
+    span {
+      color: $color1;
+    }
+  }
+
+  .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:focus,
+  .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input-focused {
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid $border-color3;
+  }
+}

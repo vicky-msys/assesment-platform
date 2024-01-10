@@ -1,0 +1,66 @@
+@import "@app/assets/styles/gColors.scss";
+
+.list-container-header {
+  margin: 0;
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  .grid-list-svg-container {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+  }
+  .container-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: $color4;
+  }
+  .status-class {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px 0 25px;
+  }
+  .status-container {
+    justify-content: end;
+    margin-right: 20px;
+  }
+  .status {
+    align-items: center;
+    p {
+      text-transform: capitalize;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 21px;
+      color: $color8;
+    }
+  }
+  .verified {
+    background-color: $bg-color-10;
+  }
+  .pending {
+    background-color: $bg-color-9;
+  }
+  .viewby-container {
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .layout {
+    cursor: pointer;
+  }
+  .active {
+    path {
+      fill: $color1;
+    }
+  }
+}
+.default-list-header {
+  min-height: 0;
+  margin: 0;
+}

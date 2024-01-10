@@ -1,0 +1,63 @@
+@import "@app/assets/styles/gColors.scss";
+@import "@app/assets/styles/gMixin.scss";
+
+.default-modal {
+  button {
+    margin-left: 10px;
+  }
+  .ant-modal-footer {
+    text-align: center;
+    display: flex;
+    justify-content: end;
+  }
+  .ant-modal-close {
+    position: absolute;
+    top: -16px;
+    right: -13px;
+    background: $bg-color-4;
+    border-radius: 50%;
+    color: $color4;
+    font-size: 17px;
+  }
+  .ant-modal-close {
+    width: 30px;
+    height: 30px;
+    @include flexCentered;
+  }
+  .ant-modal-content {
+    .ant-modal-header {
+      border-radius: 7px;
+    }
+    border-radius: 7px;
+  }
+}
+.btn-centered-modal {
+  button {
+    margin-left: 10px;
+  }
+  .ant-modal-footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .ant-modal-close {
+    position: absolute;
+    top: -16px;
+    right: -13px;
+    background: $bg-color-4;
+    border-radius: 50%;
+    color: $color4;
+    font-size: 17px;
+  }
+  .ant-modal-close {
+    width: 30px;
+    height: 30px;
+    @include flexCentered;
+  }
+  .ant-modal-content {
+    .ant-modal-header {
+      border-radius: 7px;
+    }
+    border-radius: 7px;
+  }
+}

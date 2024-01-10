@@ -1,0 +1,103 @@
+@import "@app/assets/styles/gColors.scss";
+
+.myteam-page-container {
+  width: 100%;
+  .list-container {
+    padding: 20px;
+    max-height: 86vh;
+  }
+  .btn-container .default-btn-cls {
+    border-radius: 6px;
+    height: 42px;
+  }
+}
+.my-team-add-admin {
+  height: 100%;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  overflow: auto;
+  h3 {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 34px 20px 0;
+    text-transform: capitalize;
+    word-spacing: 3px;
+  }
+  .admin-profile {
+    height: 100px;
+    max-width: 100px;
+    width: 100px;
+    font-weight: 600;
+    max-height: 100px;
+    font-size: 35px;
+  }
+  .image-upload {
+    align-items: center;
+    .default-btn-cls {
+      border-radius: 6px;
+      margin-left: 25px;
+    }
+  }
+  .input-container {
+    width: 100%;
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .skill-input {
+      width: 100% !important;
+    }
+    .button-container {
+      display: flex;
+      width: 100%;
+      justify-content: end;
+      align-items: end;
+      height: 15vh;
+      .btn-container {
+        margin-left: 20px;
+        button {
+          border-radius: 5px;
+        }
+      }
+    }
+    .ant-form-item {
+      position: relative;
+      width: 31%;
+      margin-bottom: 20px;
+      height: 80px;
+      .ant-input-number-group-wrapper {
+        width: 100%;
+      }
+      .ant-form-item-label {
+        position: absolute;
+        background-color: $bg-color-1;
+        left: 10px;
+        top: -10px;
+        z-index: 10;
+        overflow: hidden;
+        padding: 0px;
+        margin: 0;
+        label {
+          height: 0px;
+          font-size: 12px;
+          margin: 5px;
+        }
+        label::after,
+        label::before {
+          content: none;
+        }
+      }
+      .ant-input-affix-wrapper-lg {
+        height: 56px;
+        border: 1px solid #b4b4b4;
+        border-radius: 4px;
+      }
+      .ant-select-selector {
+        height: 56px;
+        border: 1px solid #b4b4b4;
+        border-radius: 4px;
+      }
+    }
+  }
+}

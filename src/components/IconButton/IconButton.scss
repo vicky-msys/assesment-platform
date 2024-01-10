@@ -1,0 +1,57 @@
+@import "@app/assets/styles/gColors.scss";
+@import "@app/assets/styles/gMixin.scss";
+
+.icon-btn-container {
+  .admin-card-edit-btn {
+    max-height: 15px !important;
+    max-width: 15px !important;
+    background: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 7px;
+    padding: 0;
+    right: 10px;
+  }
+  .default-icon-btn {
+    max-height: 20px;
+    max-width: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  .default-icon-btn:hover {
+    background: transparent;
+  }
+  .icon-first {
+    background-color: $bg-color-1;
+    height: 45px;
+    color: $color1;
+    @include flexCentered;
+    border: 1px solid $color1;
+    span {
+      margin-left: 10px;
+    }
+  }
+  .icon-first:hover {
+    background-color: $bg-color-1;
+  }
+  .icon-last {
+    background-color: $color1;
+    height: 45px;
+    color: $bg-color-1;
+    @include flexCentered;
+    flex-direction: row-reverse;
+    span {
+      margin-right: 10px;
+    }
+    svg {
+      fill: $bg-color-1;
+    }
+  }
+
+  .icon-last:hover {
+    background-color: $color1;
+    color: $bg-color-1;
+  }
+}

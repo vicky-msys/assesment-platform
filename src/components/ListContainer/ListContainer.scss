@@ -1,0 +1,25 @@
+@import "@app/assets/styles/gColors.scss";
+
+.list-container {
+  width: 100%;
+  background: $bg-color-1;
+  .list-children {
+    width: 100%;
+    height: 66vh;
+    overflow: auto;
+  }
+  .list-children::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: transparent;
+  }
+
+  .list-children::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+
+  .list-children::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px $border-color2;
+  }
+}

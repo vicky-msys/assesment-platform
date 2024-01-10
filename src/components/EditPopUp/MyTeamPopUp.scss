@@ -1,0 +1,83 @@
+@import "@app/assets/styles/gColors.scss";
+
+.admin-popUp{
+  .admin-detail-container{
+    align-items: center !important;
+    .username {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.edit-popup-container {
+  margin: 0;
+  padding: 0;
+  .title {
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .test-details {
+    justify-content: space-around;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $border-color4;
+    .ant-col {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      font-size: 12px;
+      .ant-row {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .basic-details-container {
+    border-bottom: 1px solid $border-color4;
+    .basic-detail {
+      .ant-col {
+        color: $color2;
+        font-size: 12px;
+      }
+      margin-bottom: 15px;
+      .basic-detail-value {
+        max-width: 75%;
+      }
+    }
+  }
+  .no-border{
+    border: none;
+  }
+  .admin-card-container .cardContainer {
+    background-color: $bg-color-1;
+    padding: 0;
+    height: 100px;
+    .admin-card-profile-container {
+      min-width: 85px;
+      max-width: 85px;
+      min-height: 85px;
+      max-height: 85px;
+      .admin-card-avatar-container {
+        height: 85px;
+      }
+    }
+    .ant-row {
+      align-items: center;
+    }
+    .admin-detail-container {
+      height: 65px;
+    }
+  }
+  .footer-btn-container {
+    position: absolute;
+    width: 90%;
+    bottom: 8px;
+    .ant-row {
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}
+

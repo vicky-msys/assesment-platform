@@ -1,0 +1,11 @@
+@import "@app/assets/styles/gMixin.scss";
+
+.error-container{
+    flex-direction: column;
+    @include flexCentered;
+    height: 100%;
+}
+
+.error-message{
+    width: 50%;
+}

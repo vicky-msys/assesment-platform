@@ -1,0 +1,106 @@
+@import "@app/assets/styles/gColors.scss";
+
+
+.main-container {
+    .ant-modal-content {
+      justify-self: center;
+      .btn-container .blueBgBtn {
+        width: 70px;
+        height: 42px;
+        border-radius: 5px;
+      }
+      .ant-modal-close-x {
+        border-radius: 30px;
+        width: 30px;
+        height: 30px;
+        background-color: $bg-color-1;
+        position: absolute;
+        // top: -15px;
+        // margin-left: -15px;
+        .anticon {
+          color: $color4;
+          font-weight: 700;
+          vertical-align: 10px;
+        }
+      }
+      .btn-container .whiteBgBtn {
+        width: 70px;
+        height: 42px;
+        border-radius: 5px;
+        margin-right: 20px;
+        padding: 5px;
+        color: $color1;
+      }
+      .ant-modal-header,
+      .ant-modal-footer {
+        border-bottom: none;
+        border-top: none;
+      }
+      .ant-modal-header {
+        background: $color1;
+        border-radius: 4px 4px 0px 0px;
+        height: 80px;
+        padding: 25px 20px;
+        .ant-modal-title {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 32px;
+          text-transform: capitalize;
+          color: $color14;
+        }
+      }
+      .ant-modal-body {
+        padding: 20px;
+        .main-container {
+          display: flex;
+          align-items: flex-start;
+          .ant-upload-list-text-container {
+            display: none;
+          }
+          p {
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: capitalize;
+            color: $color2;
+          }
+  
+          .crop-container {
+            padding: 20px 20px;
+            width: 45%;
+            .ant-upload {
+              margin-top: 20px;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 24px;
+              text-transform: capitalize;
+              color: $color1;
+              cursor: pointer;
+            }
+            img {
+              width: 100%;
+              height: 200px;
+            }
+            p {
+              margin-top: 20px;
+            }
+          }
+          .content {
+            padding: 15px 25px;
+            width: 50%;
+            height: 300px;
+            flex-wrap: wrap;
+            p {
+              height: 250px;
+            }
+            .btn-container {
+              display: flex;
+            }
+          }
+        }
+      }
+      .ant-modal-footer {
+        display: none;
+      }
+    }
+  }
+  

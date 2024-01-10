@@ -1,0 +1,178 @@
+@import "@app/assets/styles/gColors.scss";
+.test-layout {
+  width: 100%;
+  height: 100%;
+  .header {
+    display: block;
+  }
+  .title {
+    color: $color1;
+    font-weight: bold;
+  }
+  .timer-container {
+    align-items: center;
+    gap: 20px;
+  }
+  .question-content{
+    height: 100%;
+    background-color: $color14;
+    padding: 20px;
+  }
+  .ques-title {
+    font-size: 20px;
+    color: $color2;
+  }
+  .ques-content {
+    color: $color12;
+  }
+  .header-container {
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  .description {
+    padding-bottom: 20px;
+  }
+  .ant-steps-vertical > .ant-steps-item .ant-steps-item-content {
+    overflow: visible;
+  }
+  .test-page {
+    height: 100%;
+    max-height: 88vh;
+    justify-content: space-between;
+  }
+  .content {
+    padding: 10px;
+  }
+  .test-summary {
+    // max-width: 300px;
+    width: 100%;
+    height: 100%;
+    // margin: 10px;
+    background-color: $color14;
+  }
+  .summary{
+    padding: 10px;
+  }
+  .step-container {
+    height: 100%;
+    overflow: auto;
+    padding-left: 0px;
+    background: $gradient1;
+  }
+  .ant-steps-vertical {
+    padding-left: 6px;
+  }
+  .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon {
+    background: $color14;
+  }
+  .ant-steps-item-process
+    > .ant-steps-item-container
+    > .ant-steps-item-icon
+    .ant-steps-icon {
+    color: $color1;
+    font-weight: bold;
+    user-select: none;
+  }
+  .ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon {
+    color: $color14;
+    font-weight: 400;
+    user-select: none;
+  }
+  .ant-steps-vertical
+    > .ant-steps-item
+    > .ant-steps-item-container
+    > .ant-steps-item-tail {
+    visibility: hidden;
+  }
+  .ant-steps-item-wait .ant-steps-item-icon {
+    background: none;
+    border: none;
+  }
+  .ant-steps-vertical > .ant-steps-item .ant-steps-item-icon {
+    margin-right: 0px;
+  }
+}
+.instruct-container {
+  background-color: $bg-color-19;
+  width: 90%;
+  border-radius: 0 20px 0 0;
+  height: 38%;
+  
+  .instruction-content {
+    height: calc(100% - 40px);
+    overflow: auto;
+  }
+}
+.bar {
+  height: 100%;
+  width: 15px;
+  border-radius: 2px;
+  border: solid 1px $color1;
+  background-color: aqua;
+}
+.instruction {
+  height: 500px;
+  width: 500px;
+  background: url("./instruct.png") center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+.instruction-content {
+  background-color: $bg-color-19;
+  height: 100%;
+}
+
+.instruction-container {
+  height: 100%;
+}
+
+.java-container {
+  width: 100%;
+  height: 100%;
+}
+
+.instruction-title {
+  height: 40px;
+  font-size: 16px;
+  padding-left: 25px;
+  padding-top: 8px;
+  border-radius: 0 20px 20px 0;
+  background-color: $color14;
+  color: $color1;
+  font-weight: bold;
+}
+.instruction-cont1 {
+  background-color: $color14;
+  position: relative;
+  border-radius: 0 20px 20px 0;
+  margin-right: 20px;
+}
+ol {
+  //list-style: none;
+  color: $color1;
+  //background-color: $bg-color-19;
+  padding: 8px 15px 8px 12px;
+  margin-left: 15px;
+  //font-size: .8em;
+  background-position: 30px 0;
+
+  li {
+    &::before {
+      width: 1em;
+      margin-left: -1em;
+      vertical-align: middle;
+    }
+  }
+}
+
+.label-back {
+  background-color: $bg-color-13;
+}
+
+.test-display {
+  display: flex;
+  width: 100%;
+}

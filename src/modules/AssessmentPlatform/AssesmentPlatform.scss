@@ -1,0 +1,203 @@
+@import "@app/assets/styles/gColors.scss";
+
+.assessment-platform-container {
+  .tab-container {
+    padding-top: 20px;
+    .ant-tabs-content {
+      max-height: 75.5vh;
+    }
+  }
+  .gridViewContainer {
+    max-height: 75vh;
+  }
+}
+.grid {
+  display: grid;
+  align-items: center;
+}
+.ap-edit-popup {
+  min-height: 150px;
+  text-align: center;
+  h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: $color4;
+  }
+  .edit-popup-footer {
+    display: flex;
+    justify-content: center;
+    button {
+      border-radius: 5px;
+    }
+  }
+  .legend-label {
+    font-size: 14px !important;
+    top: -3px !important;
+  }
+  .ant-input {
+    height: 50px;
+    font-size: 13px;
+  }
+}
+.all-assessment-container {
+  background-color: $bg-color-1;
+  height: 88vh;
+  padding: 14px;
+  padding-left: 25px;
+  overflow: auto;
+  p {
+    font-size: 12px;
+  }
+  .assessment-title {
+    color: $color1;
+    text-transform: capitalize;
+  }
+  .list-container {
+    margin-top: 10px;
+    .list-children {
+      height: 66vh;
+    }
+    .list-container-header {
+      display: grid;
+      margin-bottom: 15px;
+      .icon-btn-container {
+        .default-icon-btn {
+          max-width: 105px;
+          max-height: 42px;
+          width: 100px;
+          height: 32px;
+          display: flex;
+          justify-content: space-around;
+          border: 1px solid $border-color2;
+          border-radius: 4px;
+          color: $color9;
+        }
+      }
+      .container-name {
+        width: 80vw;
+        margin: 10px 0 10px 0;
+      }
+      .viewby-container {
+        justify-content: space-between;
+        width: 81vw;
+      }
+    }
+  }
+  .assessment-preview-container {
+    height: 79vh;
+    margin-top: 20px;
+    overflow: auto;
+    .assessment-name {
+      display: flex;
+      align-items: center;
+      :hover {
+        cursor: pointer;
+      }
+      h2 {
+        text-transform: capitalize;
+        margin-left: 10px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+      }
+    }
+    .assessment-details-container {
+      margin-top: 25px;
+      .assessment-detail-row {
+        row-gap: 25px;
+        // justify-content: space-between;
+        .topic {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: $color2;
+          margin-bottom: 10px;
+        }
+        .value {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: $color4;
+          text-transform: capitalize;
+        }
+      }
+    }
+    .instruction-container {
+      margin-top: 40px;
+      .instruction-title {
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: capitalize;
+        color: $color2;
+      }
+      .instruction {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color5;
+      }
+    }
+    .assessment-question-container {
+      margin-top: 30px;
+    }
+  }
+}
+
+.i-main {
+  width: 100%;
+  height: "auto";
+  background-color: white;
+  padding: 20px 20px;
+
+  .i-route {
+    color: #0076bf;
+    font-weight: 700;
+  }
+
+  .i-container {
+    padding: 20px 0;
+    .i-title {
+      height: 32px;
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 32px;
+      text-transform: capitalize;
+      color: #050505;
+    }
+
+    .i-details-container {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      p {
+        height: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #626262;
+      }
+    }
+  }
+
+  .i-comp-container {
+    display: flex;
+    .i-graph-containers {
+      width: 53vw;
+      margin-top: 20px;
+      .i-activity-container {
+        margin-top: 20px;
+        .i-act {
+          margin-top: 12px;
+        }
+      }
+    }
+    .org-list {
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+  }
+}

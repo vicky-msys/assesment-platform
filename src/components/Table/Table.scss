@@ -1,0 +1,73 @@
+@import "@app/assets/styles/gColors.scss";
+@import "@app/assets/styles/gMixin.scss";
+
+.Table-container {
+  min-height: 100%;
+  width: 100%;
+
+  .Table-Header-Name {
+    display: flex;
+    align-items: center;
+  }
+  .Status {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    transform: translateX(94%);
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    @include flexCentered;
+  }
+  .align-edit-btn {
+    position: relative;
+    left: 10%;
+  }
+  .ant-table-thead > tr > th {
+    color: $color2;
+    font-weight: 600;
+    background: $bg-color-1 !important;
+    border-bottom: none;
+  }
+
+  .ant-table-tbody > tr {
+    color: $color2;
+    background: $bg-color-8 !important;
+    border: none !important;
+  }
+
+  .ant-table table {
+    border-spacing: 0 10px;
+  }
+  .ant-table-tbody > tr > td {
+    border: none;
+  }
+  .rowClassName1{
+    cursor: pointer;
+  }
+  .rowClassName1 td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .rowClassName1 td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .pending {
+    background-color: $bg-color-9 !important;
+  }
+  .verified {
+    background-color: $bg-color-10 !important;
+  }
+
+  .ant-table-thead
+    > tr
+    > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    content: none;
+  }
+  .ant-table-cell {
+    padding: 8px 16px;
+  }
+}

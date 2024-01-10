@@ -1,0 +1,84 @@
+@import "@app/assets/styles/gColors.scss";
+@import "@app/assets/styles/gMixin.scss";
+
+.progress-card-container {
+  width: 90%;
+  min-height: 85px;
+  max-height: 100px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: grid;
+  align-items: center;
+  border: none;
+  .card-bg-1 {
+    background-color: $bg-color-15;
+  }
+  .card-bg-2 {
+    background-color: $color1;
+  }
+  .card-bg-3 {
+    background-color: $bg-color-11;
+  }
+  .ant-card-body {
+    height: 100%;
+    padding: 0;
+  }
+  .progress-card-col-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .progress-card-name {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    min-width: 100px;
+    width: 100%;
+    max-width: 110px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: $color2;
+    margin-right: 10px;
+  }
+  .progress-card-status-bar {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    width: 60%;
+  }
+  .progress-count-container {
+    width: 68px;
+    height: 68px;
+    background-color: $bg-color-1;
+    border-radius: 50%;
+    @include flexCentered;
+    z-index: 2;
+    .progress-count {
+      width: 61px;
+      height: 61px;
+      border-radius: 50%;
+      @include flexCentered;
+      color: $bg-color-1;
+      font-size: 28px;
+      font-weight: 700;
+      z-index: 2;
+    }
+  }
+  .progress-bar-container {
+    max-height: 31px;
+    background-color: $bg-color-4;
+    width: 100%;
+    height: 27px;
+    border-radius: 37px;
+    position: absolute;
+    z-index: 1;
+    left: 45px;
+    .progress-bar-thumb {
+      height: 27px;
+      width: 70%;
+      border-radius: 37px;
+    }
+  }
+}

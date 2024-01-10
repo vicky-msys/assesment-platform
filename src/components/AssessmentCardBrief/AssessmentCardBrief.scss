@@ -1,0 +1,120 @@
+@import "@app/assets/styles/gColors.scss";
+
+.ass-dropdown {
+  .ant-dropdown-menu {
+    min-width: 100px;
+    min-height: 80px;
+    background: $bg-color-1;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    padding: 10px;
+    .ant-dropdown-menu-title-content {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px;
+      text-transform: capitalize;
+      color: $color12;
+    }
+  }
+}
+.candidateCard {
+  min-width: 100% !important;
+  .content{
+    width: 96% !important;
+  }
+}
+.assbrief-card-container {
+  width: 100%;
+  border: none;
+  min-width: 80%;
+  .ant-card-body {
+    padding: 0;
+  }
+  .cardContainer {
+    background: $bg-color-8;
+    border-radius: 4px;
+    height: 95px;
+    max-width: 450px;
+    min-width: 98%;
+    .main-row {
+      padding: 15px 15px;
+      padding-right: 3px;
+      height: 95px;
+    }
+    .content {
+      width: 65%;
+      p {
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        color: $color2;
+        margin-top: 12px;
+      }
+      .card-title {
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: capitalize;
+        color: $color12;
+        margin-top: -2px;
+      }
+      span {
+        font-weight: 600;
+        margin: 5px;
+        color: $color12;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .card-sub1 {
+        width: auto;
+      }
+      .card-sub2 {
+        padding-left: 15px;
+      }
+    }
+    .preview {
+      display: flex;
+      justify-content: end;
+      width: 31%;
+      .preview-btn {
+        width: 70px;
+        height: 35px;
+        border: 1px solid $border-color4;
+        border-radius: 5px;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: capitalize;
+        color: $color1;
+        padding: 5px;
+        margin-top: 16px;
+      }
+    }
+    .icon {
+      .icon-btn-container {
+        width: 0;
+        .default-icon-btn {
+          width: 0;
+        }
+        .ant-btn {
+          box-shadow: none;
+        }
+        .ant-btn-round {
+          height: 32px;
+          padding: 4px 0px;
+          font-size: 14px;
+          border-radius: 1px;
+        }
+      }
+      .dot {
+        width: 0;
+        height: 30px;
+        border: none;
+        border-style: none;
+        color: $color1;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-color: $bg-color-8;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import "@app/assets/styles/gColors.scss";
+@import "@app/assets/styles/gMixin.scss";
+
+.organisationCard {
+  width: 20.5vw;
+  min-height: 14vh;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: $bg-color-1;
+  .ant-card-body {
+    padding: 15px;
+  }
+  .org-card-svg-container {
+    @include flexCentered;
+    max-height: 61px;
+    min-width: 61px;
+    min-height: 60px;
+    background: $bg-color-1;
+    background: $color6;
+    border-radius: 10px;
+  }
+  .org-card-details-container {
+    position: absolute;
+    left: 90px;
+    top: 25px;
+    width: 55%;
+  }
+  .org-card-name {
+    color: $color13;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: capitalize;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+  }
+  .org-card-count {
+    color: $color1;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 30px;
+    text-transform: capitalize;
+  }
+  .blueBg{
+    background-color: $color1;
+    svg{
+      path{
+        fill : $bg-color-1
+      }
+    }
+  }
+}

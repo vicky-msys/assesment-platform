@@ -1,0 +1,67 @@
+@import "@app/assets/styles/gColors.scss";
+
+.i-mains {
+  position: relative;
+  .i-lable {
+    position: absolute;
+    // bottom: 20px;
+    top: -10px;
+    left: 10px;
+    background-color: #ffffff;
+    height: 20px;
+  }
+  .i-drop-main {
+    width: 200px;
+    height: 45px;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    p {
+      margin: 10px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #626262;
+    }
+
+    .i-icon-container {
+      margin: 10px;
+      cursor: pointer;
+    }
+  }
+}
+.i-option-container {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  background: #ffffff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  padding: 10px;
+  position: absolute;
+  z-index: 10;
+  p {
+    margin: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #050505;
+    cursor: pointer;
+  }
+  .i-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    cursor: pointer;
+  }
+  .i-range-picker {
+    margin-top: 10px;
+  }
+}

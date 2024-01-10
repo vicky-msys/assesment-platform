@@ -1,0 +1,42 @@
+@import "../../assets/styles/gColors.scss";
+
+.basic-info-container {
+  width: 100%;
+  min-height: 30vh;
+  border-radius: 4px;
+  background-color: $bg-color-1;
+  padding: 20px;
+  position: relative;
+  p {
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    color: $color1;
+    cursor: pointer;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: $color4;
+    margin-top: 10px;
+  }
+  .basic-info {
+    .ant-col {
+      margin-top: 25px;
+      .key {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 24px;
+        color: #626262;
+      }
+      .value {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: $color4;
+      }
+    }
+  }
+}

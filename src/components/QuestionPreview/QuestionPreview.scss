@@ -1,0 +1,55 @@
+@import "@app/assets/styles/gColors.scss";
+
+.question-option-container {
+  width: 100%;
+  background-color: $bg-color-8;
+  padding: 25px;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  .media-container{
+      margin-bottom: 20px;
+  }
+  h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: $color2;
+    margin-bottom: 15px;
+  }
+  .question {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: $color4;
+    margin-bottom: 10px;
+    span{
+        margin-right: 5px;
+    }
+  }
+  .option-container {
+    display: grid;
+    margin-bottom: 20px;
+    .option {
+      min-height: 45px;
+      border: 1px solid $color13;
+      border-radius: 8px;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      width: 45%;
+      color: $color4;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .active {
+      background: $color1;
+      color: $bg-color-1;
+    }
+  }
+}

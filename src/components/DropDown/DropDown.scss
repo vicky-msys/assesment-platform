@@ -1,0 +1,20 @@
+.default-dropdown {
+  width: 100%;
+  .ant-select {
+    width: 100%;
+  }
+}
+.list-container-select {
+  width: 100%;
+  max-width: 100px;
+  min-width: 100px;
+  .ant-select {
+    width: 100%;
+  }
+  .ant-select-selector {
+    border-radius: 5px !important;
+    display: flex;
+    align-items: center;
+    height: 35px !important;
+  }
+}

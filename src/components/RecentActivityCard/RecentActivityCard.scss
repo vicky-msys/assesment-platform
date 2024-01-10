@@ -1,0 +1,33 @@
+@import "@app/assets/styles/gColors.scss";
+
+.recent-activity-card-container {
+  border: none;
+  width: 100%;
+  padding-bottom: 3px;
+  margin-top: 5px;
+  border-bottom: 2px solid $color9;
+  .ant-card-body {
+    padding: 1px;
+  }
+  .card-description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color9;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .date-container {
+    margin-top: 5px;
+    .card-date {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      color: $color9;
+    }
+  }
+}

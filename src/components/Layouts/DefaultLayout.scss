@@ -1,0 +1,22 @@
+@import "/src/assets/styles/gColors";
+
+.default-layout {
+  .ant-menu-item {
+    & svg {
+      fill: $bg-color-3;
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .ant-menu-item-selected {
+    & svg {
+      fill: $bg-color-2;
+    }
+  }
+  .ant-menu-item:hover {
+    & svg {
+      fill: $bg-color-2;
+    }
+  }
+}
+

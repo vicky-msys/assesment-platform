@@ -1,0 +1,7 @@
+@import "@app/assets/styles/gMixin.scss";
+
+.not-found{
+    width: 100%;
+    height: 100%;
+    @include flexCentered;
+}

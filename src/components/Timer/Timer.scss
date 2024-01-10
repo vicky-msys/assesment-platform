@@ -1,0 +1,22 @@
+@import "@app/assets/styles/gColors";
+.timer-container{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    .timer-label{
+        font-size: 30px;
+        font-weight: bold;
+        min-width: 120px;
+    }
+
+    .timer-inner-circle{
+        stroke: $bg-color-18;
+        fill: transparent;
+    }
+    .timer-outer-circle{
+        stroke: $color4;
+        fill: transparent;
+    }
+}
+
+

@@ -1,0 +1,63 @@
+@import "@app/assets/styles/gColors.scss";
+
+.ass-card-container {
+  width: 32%;
+  border: none;
+  min-width: 300px;
+  .ant-card-body {
+    padding: 0;
+  }
+  .cardContainer {
+    background: $bg-color-8;
+    border-radius: 4px;
+    height: 195px;
+    max-width: 450px;
+    min-width: 320px;
+    padding: 25px;
+    .dot {
+      margin-top: 3%;
+      margin-right: 3%;
+    }
+    .avatar {
+      margin-top: 8%;
+      display: flex;
+      justify-content: end;
+    }
+    cursor: pointer;
+    .ass-card-profile-container {
+      min-width: 55px;
+      max-width: 100px;
+      min-height: 98px;
+      max-height: 100px;
+      margin-right: 15px;
+      border-radius: 50%;
+      .card-domain {
+        font-weight: 600;
+        margin-top: -10%;
+      }
+      .common-value {
+        padding-bottom: 10px;
+        width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .common-left-style {
+        width: 22px;
+        height: 15px;
+        padding-bottom: 32px;
+        font-size: 12px;
+        line-height: 0px;
+        color: $color2;
+      }
+    }
+    .sharebtn {
+      border-radius: 5px;
+      background-color: $color1;
+      height: 35px;
+      color: $bg-color-1;
+      margin-left: 5%;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import "../../assets/styles/gColors.scss";
+
+.candidate-basic-details {
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  border: 5px;
+  width: 96%;
+  height: 14vh;
+  overflow: hidden;
+  position: relative;
+  .svg {
+    position: absolute;
+    right: 20px;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+  .active {
+    transform: rotate(0deg);
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: $color4;
+  }
+  .individual-row {
+    padding: 15px 0;
+    border-bottom: 0.1px solid #eaeaea;
+  }
+  .skill-col {
+    padding: 2px 15px;
+    margin-right: 10px;
+    background: #f4f7fe;
+    border-radius: 16.5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #050505;
+  }
+  .key {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .contact {
+    margin-bottom: 10px;
+    .link {
+      color: $color1;
+      font-weight: 600;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    .key {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      color: $color4;
+    }
+    .value {
+      margin-bottom: 10px;
+    }
+  }
+  .last-element {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+.full-height {
+  height: auto;
+}
+.basic-details-button-container {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  width: 96%;
+}

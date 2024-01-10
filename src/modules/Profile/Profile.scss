@@ -1,0 +1,206 @@
+@import "@app/assets/styles/gColors.scss";
+.profile-layout{
+  width: 100%;
+  .profile-header{
+    display: block;
+    // padding-bottom: 10px;
+  }
+  .text-title{
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  .date-picker{
+    width: 100%;
+  }
+  .global-header-container{
+    border-bottom: solid 2px $color19;
+  }
+  .profile-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+  .btn{
+    margin-bottom: 10px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .hidden{
+    visibility: hidden;
+  }
+  .blueBtn{
+    background-color: $color1;
+    color: $bg-color-1;
+  }
+  .main{
+    max-height: 88vh;
+    overflow: auto;
+    background-color: $bg-color-1;
+    padding-top: 10px;
+  }
+  .save-btn-container{
+    justify-content: right;
+    gap: 10px;
+  }
+  .step-container{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .ant-steps-item-finish .ant-steps-item-icon {
+    background-color: $bg-color-10;
+  }
+  .ant-steps{
+    width: 50%;
+  }
+  .ant-steps-item-title{
+    font-size: 14px;
+    line-height: 10px;
+  }
+  .ant-steps-item-title{
+    font-weight: bold;
+  }
+  .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    color: $color1;
+}
+.ant-steps-item-finish .ant-steps-item-icon svg{
+  fill: $color14;
+}
+.ant-select-single.ant-select-lg:not(.ant-select-customize-input) .ant-select-selector{
+  padding: 5px 11px;
+  height: 52px;
+}
+}
+.work-response, .btn{
+  margin-bottom: 10px;
+}
+.add-employ{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.response-container{
+  width: 80% !important;
+}
+.org-main {
+  width: 100%;
+  background-color: $bg-color-1;
+  height: 100%;
+  padding: 3vh 10vh 0;
+  .address{
+    p {
+      font-size: 21px;
+      font-weight: 700;
+      margin: 0 34px 20px 10px;
+      text-transform: capitalize;
+      word-spacing: 3px;
+    }
+  }
+  .profile-page-container {
+    //margin-left: 2%;
+    width: 98%;
+    //margin-top: 2vh;
+    
+    .upload-btn-container{
+      gap: 15px;
+    }
+    .profile-label .ant-row{
+      align-items: center;
+      padding-bottom: 10px;
+    }
+    .address-title{
+      font-size: 15px;
+      margin: 0px 0px 15px 0px
+    }
+    .org-profile {
+      width: 100px;
+      height: 100px;
+      font-size: 50px;
+      font-weight: 600;
+    }
+    .avator-container{
+      align-items: center;
+      gap: 40px;
+    }
+    .btn-row {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: end;
+      .btn {
+        font-size: 14px;
+        line-height: 21px;
+        margin-left: 10px;
+        margin-right: 5px;
+        border-radius: 5px;
+        color: $bg-color-1;
+        height: 42px;
+      }
+      .org-form-cancel {
+        color: $color1;
+      }
+      .org-savebtn {
+        background: $color1;
+        color: $bg-color-1;
+      }
+    }
+    .ant-input-group {
+      .ant-input {
+        height: 50px;
+      }
+    }
+    .col-container {
+      justify-content: space-around;
+    }
+    .org-left-col {
+      .ant-input-affix-wrapper {
+        height: 50px;
+        border-radius: 4px;
+      }
+      .ant-input-affix-wrapper > input.ant-input {
+        font-size: 14px;
+        color: $color2;
+      }
+
+      .ant-select-single.ant-select-lg:not(.ant-select-customize-input)
+        .ant-select-selector {
+        font-size: 14px;
+        color: $color2;
+        height: 50px;
+        border-radius: 4px;
+      }
+    }
+    .org-right-col {
+      .services {
+        padding-left: 35px;
+        padding-top: 1px;
+      }
+      .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border-radius: 4px;
+        height: 50px;
+      }
+      .ant-select-multiple .ant-select-selection-item-content {
+        font-size: 14px;
+        color: $color2;
+      }
+      .ant-input-affix-wrapper {
+        height: 50px;
+        border-radius: 4px;
+      }
+      .ant-input-affix-wrapper > input.ant-input {
+        font-size: 14px;
+        color: $color2;
+      }
+      .ant-select-single.ant-select-lg:not(.ant-select-customize-input)
+        .ant-select-selector {
+        font-size: 14px;
+        color: $color2;
+        height: 50px;
+        border-radius: 4px;
+      }
+    }
+  }
+}

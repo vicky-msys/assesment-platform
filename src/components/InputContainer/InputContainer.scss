@@ -1,0 +1,70 @@
+@import "@app/assets/styles/gColors.scss";
+
+.side-label > .ant-form-item-row > .ant-form-item-label {
+  display: flex;
+  align-items: normal;
+  width: 30%;
+  font-weight: bold;
+}
+.side-label > .ant-form-item-row > .ant-form-item-label ~ .ant-form-item-label {
+  display: block;      
+}
+
+.note{
+  font-size: 12px;
+  color: $color16;
+  position: relative;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+.side-label {
+  margin-bottom: 0px;
+  .ant-form-item-label > label{
+    font-size: 18px;
+  }
+  .ant-row {
+    flex-wrap: nowrap;
+    margin-right: 25px;
+    align-items: baseline;
+  }
+}
+
+.ant-divider-horizontal{
+  margin: 0 0 20px 0;
+}
+
+.top-label.ant-form-item {
+  .ant-picker{
+    padding: 12px 11px 12px;
+  }
+  .ant-select-selector{
+    padding: 6px;
+  }
+  width: 50%;
+  margin: 0 0 30px 0;
+  position: relative;
+  .ant-input-affix-wrapper-lg{
+    padding: 12px 11px;
+  }
+  .ant-form-item-label {
+    position: absolute;
+    background-color: $bg-color-1;
+    left: 5px;
+    top: -13px;
+    z-index: 10;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0;
+
+    label {
+      height: 0px;
+      font-size: 12px;
+      margin: 5px;
+    }
+    label::after,
+    label::before {
+      content: none;
+    }
+  }
+}
+

@@ -1,0 +1,43 @@
+@import "@app/assets/styles/gColors.scss";
+
+.side-popup-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 10;
+  overflow: hidden;
+  @keyframes popupTransition {
+    0% {
+      right: -35vw;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  .popup-content {
+    width: 35vw;
+    padding: 20px;
+    height: 88vh;
+    position: absolute;
+    right: -35vw;
+    bottom: 0;
+    background-color: $bg-color-1;
+    box-shadow: -5px 1px 8px rgba(0, 0, 0, 0.12);
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 18px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+  }
+  .fullwidth {
+    right: 0;
+    animation-name: popupTransition;
+    animation-duration: 1s;
+  }
+}

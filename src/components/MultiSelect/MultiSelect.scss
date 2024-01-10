@@ -1,0 +1,11 @@
+.default-multi-select {
+  .ant-select {
+    width: 100%;
+  }
+}
+.ant-select-tree-list-holder-inner {
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0;
+}

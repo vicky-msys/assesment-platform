@@ -1,0 +1,157 @@
+@import "@app/assets/styles/gcolors.scss";
+
+.tab {
+  position: relative;
+  min-height: 75vh;
+  .ant-tabs {
+    min-height: 73vh;
+  }
+  .ant-switch {
+    min-width: 40px;
+  }
+  .default-level-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .grid-level-container {
+    display: grid;
+  }
+
+  .title {
+    position: absolute;
+    left: 2%;
+    width: 8vw;
+    color: $color1;
+    border-bottom: 1px solid $color13;
+    padding-bottom: 11px;
+    font-weight: 600;
+  }
+  .topics-container {
+    .alert {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      svg {
+        margin-right: 5px;
+      }
+    }
+    .topics-list {
+      .list-container .list-children {
+        height: 28vh;
+        .gridViewContainer {
+          display: grid;
+          row-gap: 0px;
+        }
+      }
+      .topics-list-container {
+        .gridViewContainer {
+          row-gap: 0px;
+        }
+        .list-container-header {
+          margin-bottom: 0;
+        }
+        max-height: 50vh;
+        overflow: auto;
+        position: relative;
+        .alphabetic-nav {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+      .level-item {
+        margin: 0 0 20px 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: $color4;
+        .topic {
+          text-transform: capitalize;
+        }
+      }
+      .tab-title {
+        margin: 15px 0;
+        color: $color4;
+        font-weight: 600;
+      }
+      .large {
+        min-height: 125px;
+        .topic {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+  .ant-tabs-nav-wrap {
+    margin-top: 20px;
+  }
+  .ant-tabs-nav {
+    padding: 0;
+    box-shadow: none;
+    border-right: 1px solid $color13;
+    width: 11vw;
+  }
+  .ant-tabs-ink-bar {
+    background-color: transparent;
+  }
+  .ant-tabs-tab-btn {
+    color: $border-color1;
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: $color4 !important;
+  }
+  .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .btn-container .default-btn-cls {
+    min-width: 80px;
+    height: 42px;
+    border-radius: 7px;
+  }
+  .ant-form {
+    padding-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $border-color1;
+    .ant-form-item {
+      position: relative;
+      padding-top: 10px;
+      input {
+        height: 45px;
+        border-radius: 4px;
+        border: 1px solid $color13;
+      }
+      textarea {
+        border-radius: 4px;
+        border: 1px solid $color13;
+      }
+      .ant-input-number-group-wrapper {
+        width: 100%;
+      }
+      .ant-form-item-label {
+        position: absolute;
+        background-color: $bg-color-1;
+        left: 10px;
+        top: -2px;
+        z-index: 10;
+        overflow: hidden;
+        padding: 0px;
+        margin: 0;
+
+        label {
+          color: $color15;
+          height: 0px;
+          font-size: 12px;
+          margin: 5px;
+        }
+        label::after,
+        label::before {
+          content: none;
+        }
+      }
+    }
+  }
+}

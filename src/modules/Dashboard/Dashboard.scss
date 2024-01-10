@@ -1,0 +1,81 @@
+@import "@app/assets/styles/gColors.scss";
+
+.dashboard {
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  overflow: auto;
+  .dashboard-card {
+    background: $bg-color-1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    max-height: 342px;
+    min-height: 340px;
+  }
+  .dashboard-card-1 {
+    width: 29%;
+    display: grid;
+    min-width: 225px;
+    .vertical-align {
+      align-items: center;
+    }
+  }
+  .dashboard-card-2 {
+    width: 27%;
+    display: grid;
+    padding: 20px;
+    overflow: hidden;
+    min-width: 350px;
+    .recent-activity {
+      display: flex;
+      justify-content: center;
+      margin-top: 16px;
+    }
+    .list-container {
+      .btn-container .default-btn-cls {
+        background-color: $bg-color-1;
+        color: $color1;
+        border: none;
+        height: auto;
+      }
+      .container-name {
+        font-size: 19px;
+      }
+      .ant-col-17 {
+        max-width: 20%;
+      }
+      .list-container-header .viewby-container {
+        justify-content: start;
+      }
+      .list-children {
+        height: auto;
+      }
+    }
+  }
+  .dashboard-card-3 {
+    width: 42%;
+    display: grid;
+    min-width: 440px;
+    .center-align {
+      align-items: center;
+    }
+  }
+  .dashboard-card-4 {
+    min-height: 39vh;
+    max-height: 41vh;
+    width: 62%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dashboard-card-5 {
+    min-height: 39vh;
+    width: 37%;
+  }
+  .child1 {
+    height: 49%;
+    background: $bg-color-1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,33 @@
+@import "@app/assets/styles/gColors.scss";
+
+.global-header-container {
+  margin: 0;
+  min-height: 12vh;
+  height: 100%;
+  max-height: 12.5vh;
+  background-color: $bg-color-1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  * {
+    margin: 0px;
+  }
+  .header-logo-container {
+    max-width: 10%;
+    img {
+      max-width: 100%;
+    }
+  }
+  .header-icon-container {
+    max-width: 15%;
+    min-width: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    svg {
+      cursor: pointer;
+      max-width: 24px;
+    }
+  }
+}

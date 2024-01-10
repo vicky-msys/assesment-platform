@@ -1,0 +1,116 @@
+@import "@app/assets/styles/gColors.scss";
+.strip {
+  width: 100%;
+  max-height: 100px;
+}
+
+.strip img {
+  width: 320px;
+  height: 240px;
+  margin-right: 10px;
+}
+
+.container {
+  margin: 5% 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .capture-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 320px;
+    background-color: $color19;
+    margin: 0%;
+  }
+  .capture-title {
+    font-size: 18px;
+    padding: 10%;
+  }
+  .icon-box {
+    width: 280px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .capture-icon{
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .note-label {
+    padding-bottom: 10%;
+  }
+}
+
+.webcam-video {
+  position: relative;
+  width: 280px;
+  height: 160px;
+  video {
+    // display: none;
+    // position: absolute;
+    // top: 300px;
+    width: 100%;
+    height: 100%;
+  }
+  .img-class{
+    width: 90%;
+    height: 100%;
+  }
+  button {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  canvas {
+    position: absolute;
+    left: 0;
+  }
+  .photo-booth {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    overflow-x: auto;
+    .strip {
+      display: flex;
+    }
+  }
+}
+
+.scene {
+  display: block;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 5px solid black;
+  border-radius: 100%;
+  overflow: hidden;
+  transition: 1s;
+  .clouds {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+  }
+  .mountains {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 400px;
+  }
+}

@@ -1,0 +1,74 @@
+@import "@app/assets/styles/gColors.scss";
+
+.myteam-page-container {
+  width: 100%;
+  .list-container {
+    padding: 20px;
+    max-height: 86vh;
+  }
+  .btn-container .default-btn-cls {
+    border-radius: 6px;
+    height: 42px;
+  }
+}
+.add-job {
+  text-align: center;
+  h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    color: $color4;
+  }
+  .add-role-btns{
+    justify-content: center;
+    button{
+      max-height: 42px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+  }
+}
+.myteam-settings-container {
+  background-color: $bg-color-1;
+  min-height: 86vh;
+  .assessment-settings-email-container {
+    padding: 25px;
+    margin-bottom: 0%;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: $color4;
+    padding: 20px 0 20px 25px;
+  }
+  .tab-container {
+    .tab .topics-container .topics-list .list-container .list-children{
+      height: 40vh;
+    }
+    .tab {
+      min-height: auto;
+      .ant-tabs {
+        min-height: auto;
+      }
+    }
+    .admin-main {
+      padding: 0 20px;
+      .admin-main-container {
+        padding: 0;
+        margin-left: 0;
+      }
+      .form-row {
+        justify-content: space-between;
+      }
+      .admin-profile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import "@app/assets/styles/gColors.scss";
+
+.delete-popup-main {
+  .ant-modal-close-x {
+    display: none;
+  }
+  .ant-modal-footer {
+    display: none;
+  }
+}
+
+.del-topic-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .del-title {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+    .title {
+      text-align: center;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 42px;
+      text-align: center;
+      color: #050505;
+    }
+  }
+
+  .sub-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 13px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .del-btn-container {
+    margin: 30px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+
+    .btn {
+      font-size: 14px;
+      line-height: 21px;
+      margin-left: 10px;
+      margin-right: 5px;
+      border-radius: 5px;
+      color: $bg-color-1;
+      height: 42px;
+    }
+
+    .del-cancel {
+      color: $color1;
+    }
+    .del-save {
+      background: $color1;
+      color: $bg-color-1;
+    }
+  }
+}

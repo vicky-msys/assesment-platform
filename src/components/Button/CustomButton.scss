@@ -1,0 +1,58 @@
+@import "@app/assets/styles/gColors.scss";
+
+.btn-container {
+  border-radius: 10px;
+  .btn {
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    height: 42px;
+  }
+  .default-btn-cls {
+    background-color: $color1;
+    height: 45px;
+    color: $bg-color-1;
+  }
+  .blueBgBtn {
+    background-color: $color1;
+    // height: 30px;
+    color: $bg-color-1;
+  }
+  .whiteBgBtn {
+    height: 30px;
+    background-color: $bg-color-1;
+    color: $color4;
+  }
+  .greyBgBtn {
+    height: 35px;
+    width: 100px;
+    background-color: $bg-color-6;
+    color: $color4;
+    color: $bg-color-1;
+  }
+  .addOrgBtn {
+    background-color: $color1;
+    height: 40px;
+    color: $bg-color-1;
+    border-radius: 8px;
+  }
+  .btnTransparentBtn {
+    background-color: transparent;
+    height: 30px;
+    color: $color1;
+  }
+  .whiteBgbluecolorBtn {
+    color: $color1;
+    background-color: $bg-color-1;
+    height: 42px;
+    border-radius: 5px;
+  }
+  .redBgBtn {
+    background-color: $bg-color-22;
+    color: $bg-color-1;
+    height: 42px;
+    border-radius: 5px;
+  }
+}

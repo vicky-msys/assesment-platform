@@ -1,0 +1,24 @@
+@import "@app/assets/styles/gColors.scss";
+
+.no-result-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: $color1;
+    margin-top: 20px;
+  }
+  .desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 13px;
+    text-align: center;
+    color: $color4;
+    margin-top: 20px;
+  }
+}

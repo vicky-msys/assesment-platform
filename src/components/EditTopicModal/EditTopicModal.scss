@@ -1,0 +1,82 @@
+@import "@app/assets/styles/gColors.scss";
+
+.edit-popup-main {
+  .ant-modal-close-x {
+    display: none;
+  }
+  .ant-modal-footer {
+    display: none;
+  }
+}
+
+.Edit-modal-container {
+  .Edit-title {
+    display: flex;
+    justify-content: center;
+    margin: 10px 30px;
+
+    p {
+      text-align: center;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 42px;
+      text-align: center;
+
+      color: #050505;
+    }
+  }
+
+  .edit-input-container {
+    margin: 20px;
+    .ant-form-item {
+      position: relative;
+      .ant-input-number-group-wrapper {
+        width: 100%;
+      }
+      .ant-form-item-label {
+        position: absolute;
+        background-color: #fff;
+        left: 10px;
+        top: -10px;
+        z-index: 10;
+        overflow: hidden;
+        padding: 0px;
+        margin: 0;
+
+        label {
+          height: 0px;
+          font-size: 12px;
+          margin: 5px;
+        }
+        label::after,
+        label::before {
+          content: none;
+        }
+      }
+    }
+  }
+
+  .edit-btn-container {
+    margin: 30px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+
+    .btn {
+      font-size: 14px;
+      line-height: 21px;
+      margin-left: 10px;
+      margin-right: 5px;
+      border-radius: 5px;
+      color: $bg-color-1;
+      height: 42px;
+    }
+
+    .edit-cancel {
+      color: $color1;
+    }
+    .edit-save {
+      background: $color1;
+      color: $bg-color-1;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import "@app/assets/styles/gColors.scss";
+
+.topics-dropdown {
+  .ant-dropdown-menu {
+    width: 100px;
+    min-height: 75px;
+    background: #fff;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 16%);
+    border-radius: 8px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    .ant-dropdown-menu-title-content {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px;
+      text-transform: capitalize;
+      color: $color12;
+    }
+  }
+}
+.topics-list-container {
+  max-height: 42vh;
+  overflow: auto;
+  position: relative;
+  .icon-btn-container {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    z-index: 10;
+  }
+  .topic-item {
+    min-height: 85px !important;
+    padding: 15px;
+    background-color: $bg-color-8;
+    border-radius: 10px;
+    margin: 0 0 20px 0;
+    display: grid;
+    align-items: center;
+    padding-left: 20px;
+    .topic {
+      text-transform: capitalize;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: $color4;
+    }
+    .sub-topic {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+      color: $color2;
+      margin-top: 15px;
+      span {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: capitalize;
+        color: $color4;
+        margin-left: 5px;
+      }
+    }
+  }
+}
